@@ -1,4 +1,4 @@
-# Adventure Works Reseller Sales - Exploratory-Data-Analysis
+# Adventure Works Reseller Sales - Exploratory Data Analysis
 
 # Project Overview
 SQL-Based EDA on AdventureWorks DW reseller channel — analysing 60K+ transactions across sales trends, product profitability, reseller performance, and geographic distribution using SQL Server
