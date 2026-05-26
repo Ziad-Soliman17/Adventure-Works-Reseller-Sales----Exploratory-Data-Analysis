@@ -1,7 +1,7 @@
 # Adventure Works Reseller Sales - Exploratory Data Analysis
 
 # Project Overview
-SQL-Based EDA on AdventureWorks DW reseller channel — analysing 60K+ transactions across sales trends, product profitability, reseller performance, and geographic distribution using SQL Server
+SQL-Based EDA on AdventureWorks DW reseller channel - analysing 60K+ transactions across sales trends, product profitability, reseller performance, and geographic distribution using SQL Server
 covering data quality validation, statistical profiling and sales perofrmance analysis
 **Tool**: SQL Server(T-SQL) 
 **Dataset**: AdventureWorksDW2025 -FactResellerSales and related dimension tables
@@ -19,7 +19,7 @@ This project analyzes reseller sales data covering the full dataset period
 - Geographical sales distribution and profitability
 
 # Project Structure
-1.Data Inspection - Schema exploration (Tables,Columns and Constraints)
+1.Data Inspection - Schema exploration (Tables, Columns and Constraints)
 2.Data Quality Check - Null Checks, Duplicate detection and data logic validation
 3.Data Profiling - Date Range, statistical distribution and outlier detection 
 4.Reseller Sales EDA
@@ -54,9 +54,8 @@ This project analyzes reseller sales data covering the full dataset period
 - January was the strongest month ($4.2M, 15K units) while June was the weakest ($1.7M, 4.6K units).
 
 **Profitability**
-- Gross profit improved from $29K (2011) to $915K (2012) but then collapsed to −$491.9K in 2013 and gross margin turned negative in 2013 (-1.46%) as total costs ($34M) exceeded total sales ($33.5M).  
-- Total cost grew 1.9× matching the revenue growth rate but discounts grew 8× faster than sales (from $103K to $265K), amplifying the margin pressure.
-- Monthly 2013 data shows Q1 was the most loss-making (Jan −5.95%, Feb −6.87%), driven by high costs and peak discounting. Q2–Q3 margins turned slightly positiv margin (0.2% to 0.9%) before deteriorating again in Q4 (-0.4% to -0.8%).
+- Gross profit improved from $29K (2011) to $915K (2012) but then collapsed to −$491.9K in 2013 and gross margin turned negative in 2013 (-1.46%) as total costs ($34M) exceeded total sales ($33.5M). 
+- Monthly 2013 data shows Q1 was the most loss-making (Jan −5.95%, Feb −6.87%), driven by high costs and peak discounting. Q2–Q3 margins turned slightly positive margin (0.2% to 0.9%) before deteriorating again in Q4 (-0.4% to -0.8%).
 
 ### 2.Product Performance
 
@@ -68,9 +67,8 @@ This project analyzes reseller sales data covering the full dataset period
 **Top Products (2013)**
 - Mountain-200 led Bikes with $6.6M and a positive gross margin of +8.6% ($569K profit) - the only major bike model generating healthy returns.
 - Touring-1000 ($6.3M) and Road-350-W ($3.3M) showed strong sales but negative margins (−6% and −16%), indicating pricing or production cost issues on these specific models.
-- led components
 - Hitch Rack led Accessories at $183K with high margins, followed by Sport-100 Helmets ($118K) - ideal cross-sell targets.
-- In Clothing, Women's Mountain Shorts ($243K, +35% margin) and Classic Vests ($205K) performed strongly, while Long/Short Sleeve Jerseys combined generated $353K in sales but a −31% margin — a significant loss-maker.
+- In Clothing, Women's Mountain Shorts ($243K, +35% margin) and Classic Vests ($205K, ) performed strongly, while Long/Short Sleeve Jerseys combined generated $353K in sales but a −31% margin — a significant loss-maker.
 
 ### 3. Resellers & Geography
 
@@ -81,7 +79,7 @@ This project analyzes reseller sales data covering the full dataset period
 
 **Pareto Analysis — Top Resellers**
 - Just 146 out of 489 resellers (29.9%) generate 80% of total sales — a classic Pareto concentration.
-- Top reseller: RoadWay Bicycle Supply (France) at $436.9K, followed by Field Trip Store ($427.3K) and Brakes and Gears ($397.2K) — all in the Value Added Reseller category.
+- Top 3 resellers: RoadWay Bicycle Supply (France) at $436.9K, followed by Field Trip Store ($427.3K) and Brakes and Gears ($397.2K) — all in the Value Added Reseller category.
 - The top 80% segment is composed of Warehouse (76 resellers) and Value Added Reseller (70 resellers), with heavy geographic concentration in the United States (91 resellers) and Canada (21 resellers).
 
 **Geopgraphy Sales Distribution and Profitability (2013)**
@@ -91,7 +89,7 @@ This project analyzes reseller sales data covering the full dataset period
 - All countries showed negative gross profitability: highest loss in Australia (−6%), European markets around −3%, while US and Canada are near breakeven — suggesting the cost problem is global, not market-specific.
 
 ## Strategic Summary
-- **Revenue vs. Profit** - Sales grew 86% over 3 years but the business turned loss-making in 2013. Cost growth kept pace with revenue while discounts grew 8× faster.
+- **Revenue vs. Profit** - Sales grew 86% over 3 years but the business turned loss-making in 2013. Cost growth exceeded sales.
 - **Bikes Problem** - The flagship category drives 80% of revenue but generates a net loss. Mountain-200 is the exception — Touring and Road lines need cost or pricing review.
 - **Accessories Opportunity** - Highest margin category (+36%) with the fastest growth (+161%). Strong cross-sell potential alongside Bikes.
 - **Channel Momentum** - Specialty Bike Shops are the fastest-growing channel despite being smallest — worth investment to scale.
